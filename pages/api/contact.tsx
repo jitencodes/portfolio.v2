@@ -63,21 +63,17 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         body: JSON.stringify(params),
     };
 
-    resend.emails.send({
-        from: 'Jitencodes Portfolio <onboarding@resend.dev>',
-        to: 'hey.jitencodes@gmail.com',
-        reply_to: email as string,
-        subject: 'New message from your portfolio site!',
-        react: <Email authorEmail={email} authorName={name} message={message} />
-      });
-
-
-    return
-    const response = await fetch(process.env.DISCORD_WEBHOOK!, options);
-    if (response.status === 204) {
-        res.status(200).json({ result: 6 });
+    try {
+        resend.emails.send({
+            from: 'Jitencodes Portfolio <onboarding@resend.dev>',
+            to: 'jitendra.s1487@gmail.com',
+            reply_to: email as string,
+            subject: 'New message from your portfolio site!',
+            react: <Email authorEmail={email} authorName={name} message={message} />
+          });
+          res.status(200).json({ result: 6 });
         return;
-    } else {
+    } catch (error) {
         res.status(500).json({ result: 7 });
         return;
     }
