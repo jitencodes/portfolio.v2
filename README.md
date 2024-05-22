@@ -2,7 +2,7 @@
 
 My personal portfolio to showcase a couple projects. Built with [Next.js](https://nextjs.org/), [GSAP](https://greensock.com/gsap/), [TailwindCSS](https://tailwindcss.com/), and [Three.js](https://threejs.org/).
 
-## Local Version
+## Bonus Added already
 > ⚠️ **This project uses [gsap club green](https://greensock.com/club/) plugins.** You will need to have a club green account to run this locally.
 you can either download a TGZ file from official website to use gsap bonus club plugins 
 or add dependency using GSAP_TOKEN
