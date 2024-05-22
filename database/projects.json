@@ -1,0 +1,52 @@
+[
+    {
+      "id": 1,
+      "title": "Azizi Venice",
+      "description": "Interactive Design focused websites for a Dubai-based client with Arabic RTL layout and localization.",
+      "tech": ["Next.js", "Tailwind", "GSAP", "Contentful headless CMS", "Vercel"],
+      "features": ["Google Analytics", "Google Tag Manager", "Multilingual", "seamlessly content management"],
+      "links": {"git":"https://www.azizivenice.com","url":"https://www.azizivenice.com"},
+      "imageSrc": "/projects/azizi.png",
+      "imageFallback": "/projects/Azizi-fallback.png"
+    },
+    {
+      "id": 2,
+      "title": "EQBits",
+      "description": "Online review website for entertainment, books, games, and podcasts providing detailed overview and insights in graphical representations and much more.",
+      "tech": ["React.js", "SCSS", "Recharts", "Material Ui", "React Auth Kit"],
+      "features": ["Email Login", "google Auth", "forgot password", "Post a review", "Like/Dislike", "Google Analytics", "seamlessly content management"],
+      "links": {"git":"https://www.azizivenice.com","url":"https://www.azizivenice.com"},
+      "imageSrc": "/projects/eqbits.png",
+      "imageFallback": "/projects/Azizi-fallback.png"
+    },
+    {
+      "id": 3,
+      "title": "Crypto View",
+      "description": "A Cryptocurrency Price-tracking website which provides realtime information about all the cryptocurrencies currently trading in the global crypto market.",
+      "tech": ["React.js", "Firebase", "Ant design", "Material UI", "FireStore", "coingecko api"],
+      "features": ["Trending coins", "price chart", "Add to favorite", "Google auth"],
+      "links": {"git":"https://www.azizivenice.com","url":"https://www.azizivenice.com"},
+      "imageSrc": "/projects/cryptoview.png",
+      "imageFallback": "/projects/Azizi-fallback.png"
+    },
+    {
+      "id": 4,
+      "title": "Tasker",
+      "description": "Notes keeping app inspired by google keep.",
+      "tech": ["React.js"],
+      "features": ["create note", "update note", "delete note", "copy to clipboard"],
+      "links": {"git":"https://www.azizivenice.com","url":"https://www.azizivenice.com"},
+      "imageSrc": "/projects/tasker.png",
+      "imageFallback": "/projects/Azizi-fallback.png"
+    },
+    {
+      "id": 5,
+      "title": "Tasker",
+      "description": "Notes keeping app inspired by google keep.",
+      "tech": ["React.js"],
+      "features": ["create note", "update note", "delete note", "copy to clipboard"],
+      "links": {"git":"https://www.azizivenice.com","url":"https://www.azizivenice.com"},
+      "imageSrc": "/projects/tasker.png",
+      "imageFallback": "/projects/Azizi-fallback.png"
+    }
+  ]
