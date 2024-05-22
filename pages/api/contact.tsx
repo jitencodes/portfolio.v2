@@ -64,18 +64,20 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         body: JSON.stringify(params),
     };
 
-    try {
-        resend.emails.send({
-            from: 'Jitencodes Portfolio <onboarding@resend.dev>',
-            to: receiverEmail as string,
-            reply_to: email as string,
-            subject: 'New message from your portfolio site!',
-            react: <Email authorEmail={email} authorName={name} message={message} />
-          });
-          res.status(200).json({ result: 6 });
+    resend.emails.send({
+        from: 'Jitencodes Portfolio <onboarding@resend.dev>',
+        to: receiverEmail as string,
+        reply_to: email,
+        subject: 'New message from your portfolio site!',
+        react: <Email authorEmail={email} authorName={name} message={message} />
+    }).then(() => {
+        // Handle success
+        res.status(200).json({ result: 6 });
         return;
-    } catch (error) {
+    }).catch((error) => {
+        // Handle error
         res.status(500).json({ result: 7 });
+        console.log(error);
         return;
-    }
+    });
 }
