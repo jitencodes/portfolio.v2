@@ -2,6 +2,7 @@ import Email from '@/components/contact/EmailTemplate';
 import { NextApiRequest, NextApiResponse } from 'next';
 import { Resend } from 'resend';
 const resend = new Resend(process.env.RESEND_API_KEY);
+const receiverEmail = process.env.CONTACT_EMAIL
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     if (req.method !== 'POST') {
@@ -66,7 +67,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     try {
         resend.emails.send({
             from: 'Jitencodes Portfolio <onboarding@resend.dev>',
-            to: 'jitendra.s1487@gmail.com',
+            to: receiverEmail as string,
             reply_to: email as string,
             subject: 'New message from your portfolio site!',
             react: <Email authorEmail={email} authorName={name} message={message} />
