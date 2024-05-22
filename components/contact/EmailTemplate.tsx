@@ -32,7 +32,7 @@ import {
           <Container style={container}>
             <Section style={{ paddingBottom: "20px" }}>
               <Row>
-                <Text style={heading}>Here's what {authorName} wrote</Text>
+                <Text style={heading}>Here&apos;s what {authorName} wrote</Text>
                 <Text style={review}>{message}</Text>
                 <Text style={paragraph}>
                     {`You can reply to ${authorEmail} by using reply button.`}
